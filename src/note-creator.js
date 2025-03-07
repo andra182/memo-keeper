@@ -15,11 +15,8 @@ class NoteCreator extends HTMLElement {
         const body = this.shadowRoot.querySelector("#body").value;
 
         const newNote = {
-          id: "notes-" + Date.now(),
-          title,
-          body,
-          createdAt: new Date().toISOString(),
-          archived: false,
+          title: title,
+          body: body,
         };
 
         this.dispatchEvent(
@@ -27,8 +24,9 @@ class NoteCreator extends HTMLElement {
             detail: newNote,
             bubbles: true,
             composed: true,
-          })
+          }),
         );
+        console.log("Note created event dispatched:", newNote);
 
         this.shadowRoot.querySelector("form").reset();
       });

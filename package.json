@@ -1,0 +1,34 @@
+{
+  "name": "memo-keeper",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start-dev": "webpack serve --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andra182/memo-keeper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andra182/memo-keeper/issues"
+  },
+  "homepage": "https://github.com/andra182/memo-keeper#readme",
+  "description": "",
+  "dependencies": {
+    "sweetalert2": "^11.17.2"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "prettier": "^3.5.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
+  }
+}
